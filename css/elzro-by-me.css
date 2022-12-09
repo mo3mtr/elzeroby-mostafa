@@ -1285,6 +1285,7 @@ ul{
 /* discount start  */
 .discount{
     display: flex;
+    flex-wrap: wrap;
 }
 .discount .image{
     flex: 1;
@@ -1292,6 +1293,13 @@ ul{
     background-size: cover;
     text-align: center;
     position: relative;
+
+    max-width: 100%;
+}
+@media (max-width:991px){
+    .discount .image{
+        margin-bottom: 40px;
+    }
 }
 .discount .image::before{
     position: absolute;
@@ -1305,6 +1313,7 @@ ul{
 .discount .image > div{
     position: relative;
     width: 500px;
+    max-width: 100%;
     margin: auto;
     color: white;
     padding-top: 70px;
@@ -1317,6 +1326,7 @@ ul{
     line-height: 2;
     font-weight: bold;
     margin-bottom: 30px;
+    /* max-width: 100%; */
 }
 .discount .image img{
     width: 300px;
